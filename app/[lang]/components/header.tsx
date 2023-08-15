@@ -7,14 +7,14 @@ export default async function Header({ lang }: { lang: Locale }) {
   const { navigation } = await getDictionary(lang)
 
   return (
-    <header className='py-6'>
-      <nav className='container flex items-center justify-between'>
+    <header className='py-6 border-b-2'>
+      <nav className='container flex items-center justify-between '>
         <ul className='flex gap-x-8'>
           <li>
-            <Link href={`/${lang}`}>{navigation.home}</Link>
+            <Link className='btn gary-secondary' href={`/${lang}`}>{navigation.home}</Link>
           </li>
           <li>
-            <Link href={`/${lang}/about`}>{navigation.about}</Link>
+            <Link className='btn secondary  animate-pulse' href={`/${lang}/about`}>{navigation.about}</Link>
           </li>
         </ul>
         <LocaleSwitcher />

@@ -26,7 +26,7 @@ export async function generateStaticParams() {
 
 export default function RootLayout({
   children,
-  params
+  paramsgit 
 }: {
   children: React.ReactNode
   params: { lang: Locale }

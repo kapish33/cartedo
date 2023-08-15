@@ -10,7 +10,8 @@
     },
     "about": {
       "title": "About Us",
-      "description": "This is the about page"
+      "description": "This is the about page",
+      "emial text": "Gmail To Kapish"
     }
   }
 }
