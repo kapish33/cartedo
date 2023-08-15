@@ -1,0 +1,42 @@
+@tailwind components;
+
+@layer components {
+  .btn {
+    @apply lg-regular w-fit rounded-lg px-4 py-2 capitalize transition duration-300 ease-in-out focus:outline-none focus:ring-1 active:scale-90;
+    &.primary {
+      @apply border border-primary-600 bg-primary-600 text-base-white hover:bg-primary-700 focus:ring-primary-400 active:bg-primary-800;
+      &.disabled {
+        @apply border-gary-300 bg-gary-300 text-base-white focus:ring-0 active:scale-100;
+      }
+    }
+
+    &.transparent-primary {
+      @apply border border-base-white bg-base-white text-primary-500 hover:text-base-white hover:bg-primary-600 focus:ring-primary-400 active:bg-primary-600;
+    }
+
+    &.secondary {
+      @apply border border-primary-600 bg-base-white text-primary-600 hover:bg-primary-700 hover:text-base-white focus:ring-primary-400 active:bg-primary-800 active:text-base-white;
+      &.disabled {
+        @apply border-gary-300 bg-base-transparent text-gary-300 focus:ring-0 active:scale-100;
+      }
+    }
+
+    &.gary-secondary {
+      @apply border border-gary-600 bg-base-transparent text-gary-600 hover:bg-primary-700 hover:text-base-white hover:border-primary-700 focus:ring-primary-400 focus:bg-primary-700 focus:text-base-white active:bg-gary-800 active:text-base-white active:bg-gary-600;
+      &.disabled {
+        @apply border-gary-300 bg-base-transparent text-gary-300 focus:ring-0 active:scale-100;
+      }
+    }
+
+    &.gary {
+      @apply border border-gary-600 bg-base-transparent text-gary-600 hover:bg-gary-600 hover:text-base-white focus:ring-gary-400 focus:shadow-primary-600 focus:shadow-none;
+      &.disabled {
+        @apply border-gary-300 bg-base-transparent text-gary-300 focus:ring-0 active:scale-100;
+      }
+    }
+
+    &.transparent {
+      @apply border border-accent-ink bg-base-transparent text-accent-ink hover:bg-primary-500 hover:text-accent-paper active:bg-base-white active:text-gary-600;
+    }
+  }
+}
