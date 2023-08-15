@@ -3,16 +3,15 @@ import type { Metadata } from 'next'
 import { Locale, i18n } from '@/i18n.config'
 import Header from './components/header'
 
-import { Inter, Montserrat, Open_Sans } from 'next/font/google'
-
+import { Montserrat, Open_Sans } from 'next/font/google'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: [ "400",  "700"],
+  weight: ['400', '700']
 })
-const openSans= Open_Sans({
+const openSans = Open_Sans({
   subsets: ['latin'],
-  weight: [ "400",  "700"],
+  weight: ['400', '700']
 })
 
 export const metadata: Metadata = {
@@ -26,7 +25,7 @@ export async function generateStaticParams() {
 
 export default function RootLayout({
   children,
-  paramsgit 
+  params
 }: {
   children: React.ReactNode
   params: { lang: Locale }
